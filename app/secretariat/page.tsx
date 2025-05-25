@@ -1,3 +1,5 @@
+export const revalidate = 60; // Revalidate every 60 seconds
+
 import HomeLayout from "@/app/HomeLayout";
 import SecretariatCard from "@/components/SecretariatCard";
 import { SECRETARIAT_QUERY } from "@/sanity/lib/queries";
