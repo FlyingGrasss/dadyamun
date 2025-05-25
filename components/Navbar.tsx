@@ -135,7 +135,7 @@ const Navbar = () => {
             </Link>
             <Link 
               href="/apply" 
-              className={`text-2xl py-4 border-b border-[#2A2A2A] ${isActive('/apply') ? 'text-[#FF0F0F]' : 'text-black'}`}
+              className={`text-2xl py-4 border-b border-[#2A2A2A] ${isActive('/apply') ? 'text-[#172D7F]' : 'text-[#FF0F0F]'}`}
               onClick={() => setIsOpen(false)}
               aria-label="Apply"
             >
