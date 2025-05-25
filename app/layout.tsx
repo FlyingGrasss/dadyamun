@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "@/app/globals.css";
 import { Analytics } from "@vercel/analytics/next";
+
 export const metadata: Metadata = {
   title: {
     default: "DADYAMUN'25",
@@ -31,11 +32,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "DADYAMUN'25 | Bodrum Model United Nations",
     description: "25-27 Haziran 2025 | Experience diplomacy and debate at Bodrum's premier MUN conference.",
-    url: "https://dadyamun.org",
+    url: "https://www.dadyamun.org",
     siteName: "DADYAMUN'25",
     images: [
       {
-        url: "https://dadyamun.org/og-image.jpg", // Replace with actual image
+        url: "https://www.dadyamun.org/og-image.jpg", // Replace with actual image
         width: 1200,
         height: 630,
         alt: "DADYAMUN'25 - Bodrum Model United Nations Conference",
@@ -51,12 +52,12 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "DADYAMUN'25 | Bodrum Model United Nations",
     description: "25-27 Haziran 2025 | Join Turkey's leading MUN conference in Bodrum.",
-    images: ["https://dadyamun.org/og-image.jpg"], // Same as OG image
+    images: ["https://www.dadyamun.org/og-image.jpg"], // Same as OG image
     creator: "@dadyamun", // Add if Twitter handle exists
   },
 
   // Technical SEO
-  metadataBase: new URL("https://dadyamun.org"),
+  metadataBase: new URL("https://www.dadyamun.org"),
   alternates: {
     canonical: "/",
   },
@@ -81,6 +82,7 @@ export default function RootLayout({
     <html lang="en" className={`overflow-x-hidden max-w-screen`}>
       <body className={`overflow-x-hidden max-w-screen`}>
         {children}
+        <Analytics />
       </body>
     </html>
   );
