@@ -23,11 +23,11 @@ export default function Home() {
           alt="DADYAMUN'25 Logo"
           width={250}
           height={250}
-          className="mx-auto my-7 mt-3 max-sm:my-5 max-sm:w-[300px] h-auto" 
+          className="mx-auto my-7 mt-3 max-sm:my-1 max-sm:-mt-4 max-sm:w-[300px] h-auto" 
           priority
           quality={100}
         />
-        <div className="flex justify-center">
+        <div className="flex justify-center mb-4">
           <Link href="/apply" className="w-fit">
             <button className="group max-sm:text-base text-xl hover:text-[#172D7F] cursor-pointer items-center transition-colors justify-center gap-4 max-sm:gap-2 inline-flex bg-[#ffffff] text-[#0c0c0c] rounded-full px-8 max-sm:px-6 max-sm:py-3 py-4">
               Apply Now 

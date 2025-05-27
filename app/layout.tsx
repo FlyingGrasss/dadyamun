@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 
   // OpenGraph (Social Media Previews)
   openGraph: {
-    title: "DADYAMUN'25 | Bodrum Model United Nations",
+    title: "DADYAMUN'25 | Dadya Model United Nations",
     description: "25-27 Haziran 2025 | Experience diplomacy and debate at Bodrum's premier MUN conference.",
     url: "https://www.dadyamun.org",
     siteName: "DADYAMUN'25",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
         url: "https://www.dadyamun.org/og-image.jpg", // Replace with actual image
         width: 1200,
         height: 630,
-        alt: "DADYAMUN'25 - Bodrum Model United Nations Conference",
+        alt: "DADYAMUN'25 - Dadya Model United Nations Conference",
       },
     ],
     locale: "en_US",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
   // Twitter Card
   twitter: {
     card: "summary_large_image",
-    title: "DADYAMUN'25 | Bodrum Model United Nations",
+    title: "DADYAMUN'25 | Dadya Model United Nations",
     description: "25-27 Haziran 2025 | Join Turkey's leading MUN conference in Bodrum.",
     images: ["https://www.dadyamun.org/og-image.jpg"], // Same as OG image
     creator: "@dadyamun", // Add if Twitter handle exists

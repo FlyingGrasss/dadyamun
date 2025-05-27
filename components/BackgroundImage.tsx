@@ -18,14 +18,29 @@ export default function BackgroundImage() {
     // Add resize listener
     window.addEventListener('resize', checkMobile);
     
+    // Fix for mobile viewport height issue
+    const setVH = () => {
+      const vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
+    };
+    
+    setVH();
+    window.addEventListener('resize', setVH);
+    window.addEventListener('orientationchange', setVH);
+    
     // Clean up
     return () => {
       window.removeEventListener('resize', checkMobile);
+      window.removeEventListener('resize', setVH);
+      window.removeEventListener('orientationchange', setVH);
     };
   }, []);
   
   return (
-    <div className="fixed top-0 left-0 w-full h-full z-[-1] overflow-hidden bg-gradient-to-r from-[#172D7F] to-[#FECF99]">
+    <div 
+      className="fixed top-0 left-0 w-full z-[-1] overflow-hidden bg-gradient-to-r from-[#172D7F] to-[#FECF99]"
+      style={{ height: 'calc(var(--vh, 1vh) * 100)' }}
+    >
       <Image
         src={isMobile ? "/background/mobile.jpg" : "/background/desktop.jpg"}
         alt="Ocean background"
