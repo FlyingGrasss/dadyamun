@@ -51,7 +51,7 @@ const Committees = async () => {
         <div className="grid place-items-center w-full grid-cols-2 sm:grid-cols-3 gap-6 sm:gap-16 px-4 sm:px-0 mt-12 sm:mt-16">
           {sortedCommittees.map((committee: CommitteeType, index) => (
             <a
-              className="w-fit hover:scale-105 transition-transform duration-500"
+              className="w-fit hover:scale-105  transition-transform duration-500"
               href={`${committee.link || "/"}`}
               target="_blank"
               rel="noopener noreferrer"

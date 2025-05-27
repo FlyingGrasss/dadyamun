@@ -10,7 +10,7 @@ const Card = ({ imageUrl, secretariatName }: { imageUrl: string, secretariatName
         width={340}  // Desktop size (2x for retina)
         height={453} // Desktop size
         sizes="(max-width: 639px) 170px, 340px" // Exact pixel control
-        className="object-cover rounded-3xl transition-transform"
+        className="object-cover rounded-3xl  border-4 border-[#172D7F] max-sm:border-2 transition-transform"
       />
 
       <div className="absolute inset-0 flex items-end p-4">
