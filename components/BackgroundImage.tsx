@@ -2,8 +2,17 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import { usePathname } from 'next/navigation'
 
 export default function BackgroundImage() {
+
+  const pathname = usePathname();
+  
+  // Don't show navbar on studio routes
+  if (pathname?.startsWith('/studio')) {
+    return null;
+  }
+  
   const [isMobile, setIsMobile] = useState(false);
   
   useEffect(() => {

@@ -1,6 +1,20 @@
 import type { Metadata } from "next";
 import "@/app/globals.css";
 import { Analytics } from "@vercel/analytics/next";
+import { Montserrat } from "next/font/google";
+import Navbar from "@/components/Navbar";
+import BackgroundImage from "@/components/BackgroundImage";
+
+
+// Initialize the montserrat Display serif font
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-montserrat",
+  // You can use specific weights if needed
+  style: ["normal", "italic"]
+});
+
 
 export const metadata: Metadata = {
   title: {
@@ -79,9 +93,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`overflow-x-hidden max-w-screen`}>
-      <body className={`overflow-x-hidden max-w-screen`}>
+    <html lang="en" className={`overflow-x-hidden max-w-screen scroll-smooth`}>
+      <body className={`overflow-x-hidden max-w-screen ${montserrat.variable} ${montserrat.className} antialiased`} style={{ scrollbarWidth: "none" }} >
+        <BackgroundImage />
+        <Navbar />
         {children}
+        <h3 className="text-white text-center">© 2025 DADYAMUN, All Rights Reserved. <br className="sm:hidden" /> <a href="https://www.emreb.com.tr" target="_blank" className="underline cursor-pointer">Emre Bozkurt</a></h3>
         <Analytics />
       </body>
     </html>

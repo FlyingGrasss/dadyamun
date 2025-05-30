@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import React from 'react';
-import HomeLayout from '@/app/HomeLayout';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -28,7 +27,7 @@ export const metadata: Metadata = {
 
 const Letters = () => {
   return (
-    <HomeLayout>
+    <>
       <div className=''>
         <h1 className='text-white text-center text-5xl max-sm:text-3xl max-sm:pt-6 pt-12'>Letter From The <br className='sm:hidden' /> <span className='text-[#172D7F] font-black'> Secretary General </span></h1>
 
@@ -65,7 +64,7 @@ const Letters = () => {
 
 
       </div>
-    </HomeLayout>
+    </>
   );
 };
 

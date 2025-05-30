@@ -1,6 +1,5 @@
 export const revalidate = 12000; // Revalidate every 60 seconds
 
-import HomeLayout from "@/app/HomeLayout";
 import CommitteeCard from "@/components/CommitteeCard";
 import { COMMITTEES_QUERY } from "@/sanity/lib/queries";
 import { client } from "@/sanity/lib/client";
@@ -43,7 +42,7 @@ const Committees = async () => {
   const sortedCommittees = [...allCommittees].sort((a, b) => (a.id || Infinity) - (b.id || Infinity));
 
   return (
-    <HomeLayout>
+    <>
       <div className="mx-auto pb-20 max-sm:pb-12">
         <h1 className="text-6xl max-sm:text-3xl mt-16 max-sm:mt-8 text-center text-[#172D7F] font-bold">Committees</h1>
 
@@ -65,7 +64,7 @@ const Committees = async () => {
           ))}
         </div>
       </div>
-    </HomeLayout>
+    </>
   );
 };
 

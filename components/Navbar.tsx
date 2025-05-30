@@ -10,6 +10,11 @@ const Navbar = () => {
   const [isMobile, setIsMobile] = useState(false)
   const pathname = usePathname()
   
+  // Don't show navbar on studio routes
+  if (pathname?.startsWith('/studio')) {
+    return null;
+  }
+  
   const handleResize = () => {
     setIsMobile(window.innerWidth < 768)
   }

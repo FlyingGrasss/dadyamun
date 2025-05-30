@@ -1,10 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import HomeLayout from "@/app/HomeLayout";
 
 export default function Home() {
   return (
-    <HomeLayout>
+    <>
       <div>
 
 
@@ -43,6 +42,6 @@ export default function Home() {
           </Link>
         </div>
       </div>
-    </HomeLayout>
+    </>
   );
 }
