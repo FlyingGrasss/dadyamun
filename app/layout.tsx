@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       { url: '/favicon.ico', type: 'image/x-icon' },
-      { url: '/favicon-32x32.png', sizes: '64x64', type: 'image/png' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
     ],
     apple: [
       { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' }
@@ -51,14 +51,14 @@ export const metadata: Metadata = {
     images: [
       {
         url: "https://www.dadyamun.org/opengraph-image.jpg", // Replace with actual image
-        width: 690,
-        height: 362,
+        width: 1200,
+        height: 630,
         alt: "DADYAMUN'25 - Dadya Model United Nations Conference",
       },
     ],
     locale: "en_US",
     type: "website",
-    emails: ["info@dadyamun.org"], // Update contact email
+    emails: ["dadyamun2424@gmail.com"], // Update contact email
   },
 
   // Twitter Card
@@ -67,7 +67,6 @@ export const metadata: Metadata = {
     title: "DADYAMUN'25 | Dadya Model United Nations",
     description: "25-27 Haziran 2025 | Join Turkey's leading MUN conference in Bodrum.",
     images: ["https://www.dadyamun.org/opengraph-image.jpg"], // Same as OG image
-    creator: "@dadyamun", // Add if Twitter handle exists
   },
 
   // Technical SEO
