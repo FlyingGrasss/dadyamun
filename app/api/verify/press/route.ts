@@ -11,6 +11,7 @@ interface FormData {
   nationalId: string;
   gender: string;
   school: string;
+  accomodation: string;
   grade: string;
   city: string;
   motivationLetter: string;
@@ -64,7 +65,8 @@ export async function POST(request: Request) {
         formData.school,                   // 7. School
         formData.city,                     // 8. City
         formData.grade,                    // 9. Grade
-
+        formData.accomodation,             // 10. Accommodation (Important for logistics)
+                
         // -- Application Specifics & Qualifications --
 
         formData.experience,               // 14. Experience (Highly relevant for selection)

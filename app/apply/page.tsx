@@ -29,10 +29,10 @@ const Apply = () => {
   return (
     <>
 
-      <div className='flex flex-col h-[80vh] justify-center items-center gap-10 max-sm:gap-6'>
-          <h1 className="text-7xl max-sm:text-5xl text-center text-[#172D7F] font-bold">Coming Soon</h1>
+      <div className='flex flex-col h-[80vh] min-[1500px]:h-[84vh] justify-center items-center min-[1800px]:gap-14 gap-10 max-sm:gap-6'>
+          <h1 className="text-7xl min-[1800px]:text-8xl max-sm:text-5xl text-center text-[#172D7F] font-bold">Coming Soon</h1>
           <Link href="/" className="w-fit">
-            <button className="group max-sm:text-base text-xl hover:text-[#172D7F] cursor-pointer items-center transition-colors justify-center gap-4 max-sm:gap-2 inline-flex bg-[#0c0c0c] text-[#ffffff] rounded-full px-8 max-sm:px-6 max-sm:py-3 py-4">
+            <button className="group max-sm:text-base text-xl hover:text-[#172D7F] cursor-pointer  items-center transition-colors justify-center gap-4 max-sm:gap-2 inline-flex bg-[#0c0c0c] text-[#ffffff] rounded-full px-8 max-sm:px-6 max-sm:py-3 py-4">
               Home
               <Image
                 src="/arrowWhite.svg" 

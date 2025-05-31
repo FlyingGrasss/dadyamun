@@ -13,6 +13,7 @@ const ApplyDelegate = () => {
     school: '',
     grade: '',
     city: '',
+    accomodation: '',
     motivationLetter: '',
     experience: '',
     committeePreferences: ['', '', ''],
@@ -357,6 +358,23 @@ const ApplyDelegate = () => {
                   <option value="Intermediate">Intermediate (B1-B2)</option>
                   <option value="Advanced">Advanced (C1-C2)</option>
                   <option value="Native">Native/Bilingual</option>
+                </select>
+              </div>
+
+              <div>
+                <label className="block text-white text-sm font-medium mb-2">
+                  Will you need accommodation? * (Will be provided in discounted apartments and will be charged)
+                </label>
+                <select
+                  name="accomodation"
+                  value={formData.accomodation}
+                  onChange={handleInputChange}
+                  className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:border-transparent transition-all"
+                  required
+                >
+                  <option value="">Choose accomodation</option>
+                  <option value="Yes">Yes</option>
+                  <option value="Intermediate">No</option>
                 </select>
               </div>
 

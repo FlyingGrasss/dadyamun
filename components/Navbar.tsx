@@ -34,34 +34,34 @@ const Navbar = () => {
   const isActive = (path: string) => pathname === path
 
   return (
-    <div className='mt-5 mx-auto max-sm:mt-0 max-sm:w-full w-[1000px] flex justify-between h-[69px] max-sm:h-[80px] items-center py-2 max-sm:py-1 bg-white/50 max-sm:rounded-none rounded-full'>
+    <div className='mt-5 mx-auto max-sm:mt-0 max-sm:w-full w-[calc(100%-400px)] flex justify-between h-[69px] min-[1800px]:h-[80px] min-[1800px]:px-4 max-sm:h-[80px] items-center py-2 max-sm:py-1 bg-white/50 max-sm:rounded-none rounded-full'>
       <Link 
         href="/" 
-        className={`text-2xl max-sm:hidden font-extrabold py-2 px-4 pl-8 max-sm:text-xs cursor-pointer max-sm:py-1 max-sm:px-2 rounded-full ${isActive('/') ? 'text-[#172D7F]' : 'text-white'}`}
+        className={`text-2xl min-[1800px]:text-3xl max-sm:hidden font-extrabold py-2 px-4 pl-8 max-sm:text-xs cursor-pointer max-sm:py-1 max-sm:px-2 rounded-full ${isActive('/') ? 'text-[#172D7F]' : 'text-white'}`}
       >
         Home
       </Link>
       <Link 
         href="/letters" 
-        className={`text-2xl max-sm:hidden font-extrabold py-2 px-4 max-sm:text-xs cursor-pointer max-sm:py-1 max-sm:px-2 rounded-full ${isActive('/letters') ? 'text-[#172D7F]' : 'text-white'}`}
+        className={`text-2xl min-[1800px]:text-3xl max-sm:hidden font-extrabold py-2 px-4 max-sm:text-xs cursor-pointer max-sm:py-1 max-sm:px-2 rounded-full ${isActive('/letters') ? 'text-[#172D7F]' : 'text-white'}`}
       >
         Letters
       </Link>
       <Link 
         href="/secretariat" 
-        className={`text-2xl max-sm:hidden font-extrabold py-2 px-4 max-sm:text-xs cursor-pointer max-sm:py-1 max-sm:px-2 rounded-full ${isActive('/secretariat') ? 'text-[#172D7F]' : 'text-white'}`}
+        className={`text-2xl min-[1800px]:text-3xl max-sm:hidden font-extrabold py-2 px-4 max-sm:text-xs cursor-pointer max-sm:py-1 max-sm:px-2 rounded-full ${isActive('/secretariat') ? 'text-[#172D7F]' : 'text-white'}`}
       >
         Secretariat
       </Link>
       <Link 
         href="/committees" 
-        className={`text-2xl max-sm:hidden font-extrabold py-2 px-4 max-sm:text-xs cursor-pointer max-sm:py-1 max-sm:px-2 rounded-full ${isActive('/committees') ? 'text-[#172D7F]' : 'text-white'}`}
+        className={`text-2xl min-[1800px]:text-3xl max-sm:hidden font-extrabold py-2 px-4 max-sm:text-xs cursor-pointer max-sm:py-1 max-sm:px-2 rounded-full ${isActive('/committees') ? 'text-[#172D7F]' : 'text-white'}`}
       >
         Committees
       </Link>
       <Link 
         href="/apply" 
-        className={`text-2xl max-sm:hidden font-extrabold py-2 px-4 pr-8 max-sm:text-xs cursor-pointer max-sm:py-1 max-sm:px-2 rounded-full ${isActive('/apply') ? 'text-[#172D7F]' : 'text-[#FF0F0F]'}`}
+        className={`text-2xl min-[1800px]:text-3xl max-sm:hidden font-extrabold py-2 px-4 pr-8 max-sm:text-xs cursor-pointer max-sm:py-1 max-sm:px-2 rounded-full ${isActive('/apply') ? 'text-[#172D7F]' : 'text-[#FF0F0F]'}`}
       >
         Apply
       </Link>

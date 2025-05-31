@@ -96,7 +96,7 @@ export default function RootLayout({
         <BackgroundImage />
         <Navbar />
         {children}
-        <h3 className="text-white text-center">© 2025 DADYAMUN, All Rights Reserved. <br className="sm:hidden" /> <a href="https://www.emreb.com.tr" target="_blank" className="underline cursor-pointer">Emre Bozkurt</a></h3>
+        <h3 className="text-white text-center min-[1800px]:text-xl">© 2025 DADYAMUN, All Rights Reserved. <br className="sm:hidden" /> <a href="https://www.emreb.com.tr" target="_blank" className="underline cursor-pointer">Emre Bozkurt</a></h3>
         <Analytics />
       </body>
     </html>
