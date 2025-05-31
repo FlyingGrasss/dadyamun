@@ -23,19 +23,19 @@ export const metadata: Metadata = {
   },
   description: "Join DADYAMUN'25 in Bodrum on 25-27 Haziran 2025 for a premier Model UN experience. Debate, diplomacy, and leadership await!",
   keywords: [
-    "MUN conference", 
-    "Bodrum MUN", 
+    "MUN", 
+    "Dadya Model United Nations",
+    "DADYAMUN'25",
     "DADYAMUN", 
     "Model United Nations", 
-    "Turkey MUN 2025", 
-    "youth leadership"
+    "Turkey MUN 2025"
   ],
   
   // Favicons (update paths if needed)
   icons: {
     icon: [
       { url: '/favicon.ico', type: 'image/x-icon' },
-      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/favicon-32x32.png', sizes: '64x64', type: 'image/png' },
     ],
     apple: [
       { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' }
@@ -50,9 +50,9 @@ export const metadata: Metadata = {
     siteName: "DADYAMUN'25",
     images: [
       {
-        url: "https://www.dadyamun.org/og-image.jpg", // Replace with actual image
-        width: 1200,
-        height: 630,
+        url: "https://www.dadyamun.org/opengraph-image.jpg", // Replace with actual image
+        width: 690,
+        height: 362,
         alt: "DADYAMUN'25 - Dadya Model United Nations Conference",
       },
     ],
@@ -66,7 +66,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "DADYAMUN'25 | Dadya Model United Nations",
     description: "25-27 Haziran 2025 | Join Turkey's leading MUN conference in Bodrum.",
-    images: ["https://www.dadyamun.org/og-image.jpg"], // Same as OG image
+    images: ["https://www.dadyamun.org/opengraph-image.jpg"], // Same as OG image
     creator: "@dadyamun", // Add if Twitter handle exists
   },
 
@@ -85,7 +85,6 @@ export const metadata: Metadata = {
       noimageindex: false,
     },
   },
-  manifest: "/manifest.webmanifest" // PWA support
 };
 export default function RootLayout({
   children,
