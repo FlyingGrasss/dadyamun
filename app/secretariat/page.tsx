@@ -20,7 +20,7 @@ export const generateMetadata = async (): Promise<Metadata> => {
       secretariatNames, // Include all secretariat names in keywords
       "MUN conference team",
       "Model United Nations staff",
-      "Bodrum MUN organizers"
+      "Datça MUN organizers"
     ],
     openGraph: {
       title: `Secretariat`,

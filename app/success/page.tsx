@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     "Registration",
     "MUN conference",
     "Model United Nations",
-    "Bodrum MUN"
+    "Datça MUN"
   ],
   openGraph: {
     title: "Application Successful",

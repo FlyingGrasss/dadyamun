@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     default: "DADYAMUN'25",
     template: "%s | DADYAMUN'25" // Dynamic title for child pages
   },
-  description: "Join DADYAMUN'25 in Bodrum on 25-27 Haziran 2025 for a premier Model UN experience. Debate, diplomacy, and leadership await!",
+  description: "Join DADYAMUN'25 in Datça on 25-27 Haziran 2025 for a premier Model UN experience. Debate, diplomacy, and leadership await!",
   keywords: [
     "MUN", 
     "Dadya Model United Nations",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
   // OpenGraph (Social Media Previews)
   openGraph: {
     title: "DADYAMUN'25 | Dadya Model United Nations",
-    description: "25-27 Haziran 2025 | Experience diplomacy and debate at Bodrum's premier MUN conference.",
+    description: "25-27 Haziran 2025 | Experience diplomacy and debate at Datça's premier MUN conference.",
     url: "https://www.dadyamun.org",
     siteName: "DADYAMUN'25",
     images: [
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "DADYAMUN'25 | Dadya Model United Nations",
-    description: "25-27 Haziran 2025 | Join Turkey's leading MUN conference in Bodrum.",
+    description: "25-27 Haziran 2025 | Join Turkey's leading MUN conference in Datça.",
     images: ["https://www.dadyamun.org/opengraph-image.jpg"], // Same as OG image
   },
 

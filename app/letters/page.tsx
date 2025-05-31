@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     "Secretary General",
     "MUN conference",
     "Model United Nations",
-    "Bodrum MUN"
+    "Datça MUN"
   ],
   openGraph: {
     title: "Letters",
