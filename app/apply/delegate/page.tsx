@@ -363,7 +363,7 @@ const ApplyDelegate = () => {
 
               <div>
                 <label className="block text-white text-sm font-medium mb-2">
-                  Will you need accommodation? * (Will be provided in discounted apartments and will be charged)
+                  Will you need accommodation? * (Will be provided in discounted apartments and will be charged) (Available space is limited)
                 </label>
                 <select
                   name="accomodation"

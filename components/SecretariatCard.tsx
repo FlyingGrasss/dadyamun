@@ -14,7 +14,7 @@ const Card = ({ imageUrl, secretariatName }: { imageUrl: string, secretariatName
       />
 
       <div className="absolute inset-0 flex items-end p-4">
-        <h1 className="text-white text-2xl max-sm:text-base font-medium w-full text-center">
+        <h1 className="text-white text-shadow-lg text-2xl max-sm:text-base font-medium w-full text-center">
           {secretariatName}
         </h1>
       </div>
