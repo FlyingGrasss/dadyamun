@@ -333,7 +333,7 @@ const ApplyPress = () => {
                 >
                   <option value="">Choose accomodation</option>
                   <option value="Yes">Yes</option>
-                  <option value="Intermediate">No</option>
+                  <option value="No">No</option>
                 </select>
               </div>
               
