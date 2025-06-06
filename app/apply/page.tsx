@@ -28,27 +28,7 @@ export const metadata: Metadata = {
 const Apply = () => {
   return (
 
-    <>
-            <div className='flex flex-col h-[80vh] min-[1500px]:h-[84vh] justify-center items-center min-[1800px]:gap-14 gap-10 max-sm:gap-6'>
-          <h1 className="text-7xl min-[1800px]:text-8xl max-sm:text-5xl text-center text-[#172D7F] font-bold">Coming Soon</h1>
-          <Link href="/" className="w-fit">
-            <button className="group max-sm:text-base text-xl hover:text-[#172D7F] cursor-pointer  items-center transition-colors justify-center gap-4 max-sm:gap-2 inline-flex bg-[#0c0c0c] text-[#ffffff] rounded-full px-8 max-sm:px-6 max-sm:py-3 py-4">
-              Home
-              <Image
-                src="/arrowWhite.svg" 
-                width={20} 
-                height={16} 
-                alt=""
-                className="transition-transform duration-400 max-sm:w-[15px] h-auto group-hover:translate-x-2"
-              />
-              
-            </button>
-          </Link>
-        </div>
-    
-    </>
-
-    /*
+  
     <>
       <h1 className="text-6xl max-sm:text-3xl mt-16 mb-16 max-sm:mt-8 text-center text-[#172D7F] font-bold">Apply</h1>
 
@@ -158,6 +138,30 @@ const Apply = () => {
       
     </>
 
+    /*
+
+
+    <>
+            <div className='flex flex-col h-[80vh] min-[1500px]:h-[84vh] justify-center items-center min-[1800px]:gap-14 gap-10 max-sm:gap-6'>
+          <h1 className="text-7xl min-[1800px]:text-8xl max-sm:text-5xl text-center text-[#172D7F] font-bold">Coming Soon</h1>
+          <Link href="/" className="w-fit">
+            <button className="group max-sm:text-base text-xl hover:text-[#172D7F] cursor-pointer  items-center transition-colors justify-center gap-4 max-sm:gap-2 inline-flex bg-[#0c0c0c] text-[#ffffff] rounded-full px-8 max-sm:px-6 max-sm:py-3 py-4">
+              Home
+              <Image
+                src="/arrowWhite.svg" 
+                width={20} 
+                height={16} 
+                alt=""
+                className="transition-transform duration-400 max-sm:w-[15px] h-auto group-hover:translate-x-2"
+              />
+              
+            </button>
+          </Link>
+        </div>
+    
+    </>
+
+    
     */
     
 
