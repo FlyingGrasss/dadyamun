@@ -370,6 +370,7 @@ const ApplyDelegation = () => {
                         required
                       >
                         <option value="">Select grade/level</option>
+                        <option value="Secondary (Middle) School">Secondary (Middle) School</option>
                         <option value="Preparation Grade">Preparation</option>
                         <option value="9th Grade">9th Grade</option>
                         <option value="10th Grade">10th Grade</option>
