@@ -38,7 +38,7 @@ export async function POST(request: Request) {
     const sheetData = await sheetResponse.json();
     const values: SheetRow[] = sheetData.values || [];
 
-    if (values.some((row: SheetRow) => row[10] === email)) {
+    if (values.some((row: SheetRow) => row[1] === email)) {
       return NextResponse.json(
         { message: getMessage(lang, 'email_exists') },
         { status: 400 }
