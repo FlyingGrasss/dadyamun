@@ -48,7 +48,7 @@ export default function BackgroundImage() {
   return (
     <div 
       className="fixed top-0 left-0 w-full z-[-1] overflow-hidden bg-gradient-to-r from-[#172D7F] to-[#FECF99]"
-      style={{ height: 'calc(var(--vh, 1vh) * 120)' }}
+      style={{ height: '900px' }}
     >
       <Image
         src={isMobile ? "/background/mobile.jpg" : "/background/desktop.jpg"}
